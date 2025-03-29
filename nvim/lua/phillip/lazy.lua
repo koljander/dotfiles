@@ -48,7 +48,15 @@ require("lazy").setup({
 			vim.cmd.colorscheme('gruber-darker')
 		end,
 	},
+    {
+      "folke/tokyonight.nvim",
+      lazy = false,
+      priority = 1000,
+      opts = {
 
+            transparent = true,
+        },
+    },
     {
         'rust-lang/rust.vim',
         ft = "rust",

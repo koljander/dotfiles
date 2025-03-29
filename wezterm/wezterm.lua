@@ -5,15 +5,16 @@ local config = {}
 if wezterm.config_builder then config = wezterm.config_builder() end
 
 --Settings
---config.color_scheme = 'Gruber (base16)'
+config.color_scheme = "Tokyo Night" 
 config.font = wezterm.font_with_fallback({
-    {family = "UbuntuSansMono Nerd Font", scale = 1.8}
+    {family = "UbuntuSansMono Nerd Font", scale = 1.8},
+    {family = "UbuntuSansMono Nerd Font", scale = 1.8},
 })
 config.window_background_opacity = 0.9
 config.window_decorations = "RESIZE"
 config.window_close_confirmation = "AlwaysPrompt"
 config.scrollback_lines = 3000
-config.default_workspace = "home"
+config.default_workspace = "default"
 
 
 --Dim inactive panes
@@ -66,8 +67,29 @@ config.keys = {
 
 
     --Workspaces
+    {key = "N", mods = "LEADER", action = act.SwitchWorkspaceRelative(1)},
+    {key = "P", mods = "LEADER", action = act.SwitchWorkspaceRelative(-1)},
     {key = "w", mods = "LEADER", 
         action = act.ShowLauncherArgs {flags="FUZZY|WORKSPACES"}},
+    {key = "W", mods = "LEADER", 
+        action = act.PromptInputLine {
+            description = wezterm. format {
+                {Attribute = {Intensity="Bold"}},
+                {Foreground = {AnsiColor="Fuchsia"}},
+                {Text = "Enter name for new workspace"},
+            },
+            action = wezterm.action_callback(function(window,pane,line)
+                if line then
+                    window:perform_action(
+                        act.SwitchToWorkspace {
+                            name = line,
+                        },
+                        pane
+                    )
+                end
+            end),
+        },
+    },
 
 }
 
