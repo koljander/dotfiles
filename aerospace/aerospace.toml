@@ -209,3 +209,22 @@ automatically-unhide-macos-hidden-apps = false
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
+
+
+
+
+
+
+# Customize
+[[on-window-detected]]
+    if.app-id = 'com.github.wez.wezterm'
+    if.during-aerospace-startup = true
+    run = 'move-node-to-workspace C' 
+[[on-window-detected]]
+    if.app-id = 'com.google.Chrome'
+    if.during-aerospace-startup = true
+    run = 'move-node-to-workspace W' 
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.VSCode'
+    if.during-aerospace-startup = true
+    run = 'move-node-to-workspace M' 
