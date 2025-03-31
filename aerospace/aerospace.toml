@@ -228,3 +228,47 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'com.microsoft.VSCode'
     if.during-aerospace-startup = true
     run = 'move-node-to-workspace M' 
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.teams'
+    if.during-aerospace-startup = true
+    run = 'move-node-to-workspace 9' 
+
+
+
+
+[workspace-to-monitor-force-assignment]
+9 = "main"
+1 = "secondary"
+2 = "secondary"
+3 = "secondary"
+4 = "secondary"
+5 = "secondary"
+6 = "secondary"
+7 = "secondary"
+8 = "secondary"
+A = "secondary"
+B = "secondary"
+C = "secondary"
+D = "secondary"
+E = "secondary"
+F = "secondary"
+G = "secondary"
+H = "secondary"
+I = "secondary"
+J = "secondary"
+K = "secondary"
+L = "secondary"
+M = "secondary"
+N = "secondary"
+O = "secondary"
+P = "secondary"
+Q = "secondary"
+R = "secondary"
+S = "secondary"
+T = "secondary"
+U = "secondary"
+V = "secondary"
+W = "secondary"
+X = "secondary"
+Y = "secondary"
+Z = "secondary"
