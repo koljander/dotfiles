@@ -26,10 +26,18 @@ require("lazy").setup({
 	"saadparwaiz1/cmp_luasnip",
 	"L3MON4D3/LuaSnip",
 	"rafamadriz/friendly-snippets",
-	--End of Deps
+    "ThePrimeagen/harpoon",
+    "mbbill/undotree",
 
-	"ThePrimeagen/harpoon",
-	"mbbill/undotree",
+    --Trying git worktrees - remove these if not working out
+    "ThePrimeagen/git-worktree.nvim",
+    "nvim-lua/popup.nvim",
+    "nvim-telescope/telescope-fzy-native.nvim",
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    -- End of Worktree stuff
 
 	{
 		'nvim-telescope/telescope.nvim', tag = '0.1.6',
