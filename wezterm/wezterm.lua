@@ -138,19 +138,19 @@ wezterm.on("update-right-status", function (window, pane)
     if window:active_key_table() then stat = window:active_key_table() end
     if window:leader_is_active() then stat = "LDR" end
 
-    local basename = function(s)
-        return string.gsub(s, "(.*[/\\])(.*)", "%2")
-    end
-    local cwd = basename(pane:get_current_working_dir().file_path)
-    local cmd = basename(pane:get_foreground_process_name())
+    --local basename = function(s)
+        --return string.gsub(s, "(.*[/\\])(.*)", "%2")
+    --end
+    --local cwd = basename(pane:get_current_working_dir().file_path)
+    --local cmd = basename(pane:get_foreground_process_name())
 
     window:set_right_status(wezterm.format({
         {Text= wezterm.nerdfonts.oct_table .. "  " .. stat},
-        {Text= " | "},
-        {Text= wezterm.nerdfonts.md_folder .. "  " .. cwd},
-        {Text= " | "},
-        {Text= wezterm.nerdfonts.fa_code .. "  " .. cmd},
-        {Text= " | "} 
+        {Text= "  "},
+        --{Text= wezterm.nerdfonts.md_folder .. "  " .. cwd},
+        --{Text= " | "},
+        --{Text= wezterm.nerdfonts.fa_code .. "  " .. cmd},
+        --{Text= " | "} 
     }))
 end)
 
