@@ -5,7 +5,7 @@ local config = {}
 if wezterm.config_builder then config = wezterm.config_builder() end
 
 --Settings
-config.color_scheme = "Tokyo Night" 
+config.color_scheme = "Github Dark" 
 config.font = wezterm.font_with_fallback({
     {family = "UbuntuSansMono Nerd Font", scale = 1.8},
     {family = "UbuntuSansMono Nerd Font", scale = 1.8},

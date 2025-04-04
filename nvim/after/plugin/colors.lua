@@ -1,6 +1,6 @@
 
 function colorMyPencils(color)
-	color = color or "tokyonight"
+	color = color or "gruber-darker"
 	vim.cmd.colorscheme(color);
 
     --This popped up with colorscheme tokyo, was not nesscary on gruber
