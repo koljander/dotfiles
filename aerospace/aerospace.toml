@@ -57,12 +57,12 @@ automatically-unhide-macos-hidden-apps = false
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 20 
-    inner.vertical =   20 
-    outer.left =       20 
-    outer.bottom =     20 
-    outer.top =        20 
-    outer.right =      20 
+    inner.horizontal = 0 
+    inner.vertical =   0 
+    outer.left =       0 
+    outer.bottom =     0 
+    outer.top =        0 
+    outer.right =      0 
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -96,10 +96,13 @@ automatically-unhide-macos-hidden-apps = false
     # end tell'
     # '''
 
+    alt-enter = 'fullscreen'
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     alt-slash = 'layout tiles horizontal vertical'
     alt-comma = 'layout accordion horizontal vertical'
 
+    # ALT == OPTION
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     alt-h = 'focus left'
     alt-j = 'focus down'
@@ -237,38 +240,42 @@ automatically-unhide-macos-hidden-apps = false
 
 
 [workspace-to-monitor-force-assignment]
-9 = "main"
-1 = "secondary"
-2 = "secondary"
-3 = "secondary"
-4 = "secondary"
-5 = "secondary"
-6 = "secondary"
-7 = "secondary"
-8 = "secondary"
-A = "secondary"
-B = "secondary"
-C = "secondary"
-D = "secondary"
-E = "secondary"
-F = "secondary"
-G = "secondary"
-H = "secondary"
-I = "secondary"
-J = "secondary"
-K = "secondary"
-L = "secondary"
-M = "secondary"
-N = "secondary"
-O = "secondary"
-P = "secondary"
-Q = "secondary"
-R = "secondary"
-S = "secondary"
-T = "secondary"
-U = "secondary"
-V = "secondary"
-W = "secondary"
-X = "secondary"
-Y = "secondary"
-Z = "secondary"
+9 = "Built-in" 
+1 = "AW2725DF"
+2 = "AW2725DF"
+3 = "AW2725DF"
+4 = "AW2725DF"
+5 = "AW2725DF"
+6 = "AW2725DF"
+7 = "AW2725DF"
+8 = "AW2725DF"
+A = "AW2725DF"
+B = "AW2725DF"
+C = "AW2725DF"
+D = "AW2725DF"
+E = "AW2725DF"
+F = "AW2725DF"
+G = "AW2725DF"
+H = "AW2725DF"
+I = "AW2725DF"
+J = "AW2725DF"
+K = "AW2725DF"
+L = "AW2725DF"
+M = "AW2725DF"
+N = "AW2725DF"
+O = "AW2725DF"
+P = "AW2725DF"
+Q = "AW2725DF"
+R = "AW2725DF"
+S = "AW2725DF"
+T = "AW2725DF"
+U = "AW2725DF"
+V = "AW2725DF"
+W = "AW2725DF"
+X = "AW2725DF"
+Y = "AW2725DF"
+Z = "SAMSUNG"
+
+
+
+
