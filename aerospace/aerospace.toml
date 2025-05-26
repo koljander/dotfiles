@@ -219,22 +219,22 @@ automatically-unhide-macos-hidden-apps = false
 
 
 # Customize
-[[on-window-detected]]
-    if.app-id = 'com.github.wez.wezterm'
-    if.during-aerospace-startup = true
-    run = 'move-node-to-workspace I' 
-[[on-window-detected]]
-    if.app-id = 'com.google.Chrome'
-    if.during-aerospace-startup = true
-    run = 'move-node-to-workspace U' 
-[[on-window-detected]]
-    if.app-id = 'com.microsoft.VSCode'
-    if.during-aerospace-startup = true
-    run = 'move-node-to-workspace O' 
-[[on-window-detected]]
-    if.app-id = 'com.microsoft.teams'
-    if.during-aerospace-startup = true
-    run = 'move-node-to-workspace 9' 
+#[[on-window-detected]]
+#if.app-id = 'com.github.wez.wezterm'
+#if.during-aerospace-startup = true
+#run = 'move-node-to-workspace I' 
+#[[on-window-detected]]
+#if.app-id = 'com.google.Chrome'
+#if.during-aerospace-startup = true
+#run = 'move-node-to-workspace U' 
+#[[on-window-detected]]
+#if.app-id = 'com.microsoft.VSCode'
+#if.during-aerospace-startup = true
+#run = 'move-node-to-workspace O' 
+#[[on-window-detected]]
+#if.app-id = 'com.microsoft.teams'
+#if.during-aerospace-startup = true
+#run = 'move-node-to-workspace 9' 
 
 
 
