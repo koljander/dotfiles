@@ -27,6 +27,18 @@ require('mason-lspconfig').setup({
         capabilities = lsp_capabilities,
       })
     end,
+    rust_analyzer = function()
+    require('lspconfig').rust_analyzer.setup({
+      capabilities = lsp_capabilities,
+      settings = {
+        ["rust-analyzer"] = {
+          cargo = {
+            features = { "discovery-api" },
+          },
+        },
+      },
+    })
+  end,
     lua_ls = function()
       require('lspconfig').lua_ls.setup({
         capabilities = lsp_capabilities,

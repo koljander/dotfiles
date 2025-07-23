@@ -7,8 +7,8 @@ if wezterm.config_builder then config = wezterm.config_builder() end
 --Settings
 config.color_scheme = "Github Dark" 
 config.font = wezterm.font_with_fallback({
-    {family = "UbuntuSansMono Nerd Font", scale = 2.5},
-    {family = "UbuntuSansMono Nerd Font", scale = 2.5},
+    {family = "UbuntuSansMono Nerd Font", scale = 2.6},
+    {family = "UbuntuSansMono Nerd Font", scale = 2.6},
 })
 config.window_background_opacity = 0.9
 config.window_decorations = "RESIZE"
